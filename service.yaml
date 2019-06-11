@@ -3,13 +3,14 @@ swagger: '2.0'
 
 #this is document metadata
 info:
-  version: "1.0.1"
+  version: "1.0.0"
   title: Swagger Petstore
 
 host: petstore.swagger.io
 basePath: /v2
 schemes:
   - https
+  - http
 
 #WEndpoints Requested
 paths:
