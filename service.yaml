@@ -25,12 +25,25 @@ paths:
       tags:
         - pet
       summary: Add a new pet to the store
-      #query params
-      responses:
-        200:
-          description: successful response
+      consumes:
+        0: application/json
+        1: application/xml
+      produces:
+        0: application/json
+        1: application/xml
+      parameters:
+        - name: body
+          in: body
+          description: Pet object that needs to be added to the store
+          required: true
           schema:
             $ref: '#/definitions/Pet'
+      #query params
+
+      responses:
+        405:
+          description: Invalid input
+
 
 
 
@@ -94,7 +107,8 @@ definitions:
     type: object
     properties:
       id:
-        type: integer($int64)
+        type: integer
+        format: int64
       name:
         type: string
   Pet:
