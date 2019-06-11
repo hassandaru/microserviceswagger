@@ -1,0 +1,20 @@
+#API open API version
+swagger: '2.0'
+
+#this is document metadata
+info:
+  version: "1.0.1"
+  title: Swagger Petstore
+
+host: petstore.swagger.io
+basePath: /v2
+schemes:
+  - https
+
+#WEndpoints Requested
+paths:
+  /pet
+
+  /store
+
+  /user
