@@ -19,7 +19,6 @@ tags:
 #WEndpoints Requested
 paths:
   /pet:
-
     # first is post
     post:
       tags:
@@ -31,6 +30,7 @@ paths:
       produces:
         0: application/json
         1: application/xml
+      #query params
       parameters:
         - name: body
           in: body
@@ -38,14 +38,89 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/Pet'
-      #query params
-
       responses:
         405:
           description: Invalid input
+      security:
+        - petstore_auth
+    #then is put
+    put:
+      tags:
+        - pet
+      summary: Update an existing pet
+      consumes:
+        0: application/json
+        1: application/xml
+      produces:
+        0: application/json
+        1: application/xml
+      parameters:
+        - name: body
+          in: body
+          description: Pet object that needs to be added to the store
+          required: true
+          type: array
+          items:
+            enum:
+              0: available
+              1: pending
+              2: sold
+            default: available
+          collectionFormat: multi
+          schema:
+            $ref: '#/definitions/Pet'
+      security:
+        - petstore_auth
+      responses:
+        400:
+          description: Invalid ID supplied
+        404:
+          description: Pet not found
+        405:
+          description: Validation exception
+    get:
+      tags:
+        - pet
+      summary: Find pets by status
+      consumes:
+        0: application/json
+        1: application/xml
+      produces:
+        0: application/json
+        1: application/xml
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: true
+          schema:
+            $ref: '#/definitions/Pet'
+      security:
+        - petstore_auth
+      responses:
+        200:
+          description: successful operation
+          example: |
+            <?xml version="1.0" encoding="UTF-8"?>
+            <!-- XML example cannot be generated; root element name is undefined -->
+        400:
+          description: Invalid status value
 
 
 
+
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: https://petstore.swagger.io/oauth/authorize
+    flow: implicit
+    scopes:
+      write:pets: modify pets in your account
+      read:pets: read your pets.
+  api_key:
+    type: apiKey
+    name: token
+    in: query #must add it to each call for it to work.
 
 definitions:
   Order:
