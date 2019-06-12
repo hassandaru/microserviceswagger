@@ -25,11 +25,11 @@ paths:
         - pet
       summary: Add a new pet to the store
       consumes:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       #query params
       parameters:
         - name: body
@@ -49,11 +49,11 @@ paths:
         - pet
       summary: Update an existing pet
       consumes:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       parameters:
         - name: body
           in: body
@@ -84,11 +84,11 @@ paths:
         - pet
       summary: Find pets by status
       consumes:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       parameters:
         - name: status
           in: query
@@ -114,11 +114,11 @@ paths:
         - pet
       summary: Find pets by Tags
       consumes:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       parameters:
         - name: tags
           in: query
@@ -143,11 +143,11 @@ paths:
       summary: Find pet by Id
       description: returns a single pet
       consumes:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       parameters:
         - name: petId
           in: path
@@ -190,10 +190,10 @@ paths:
         - pet
       summary: Updates a pet in the store with form data
       consumes:
-        0: "application/x-www-form-urlencoded"
+        - "application/x-www-form-urlencoded"
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       #query params
       parameters:
         - name: petId
@@ -222,8 +222,8 @@ paths:
         - pet
       summary: Deletes a pet
       produces:
-        0: application/json
-        1: application/xml
+        - application/json
+        - application/xml
       #query params
       parameters:
         - name: api_key
@@ -249,9 +249,9 @@ paths:
         - pet
       summary: Uploads an image
       consumes:
-        0: "multipart/form-data"
+        - "multipart/form-data"
       produces:
-        0: application/json
+        - application/json
       #query params
       parameters:
         - name: petId

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd7c5c39-1885-4c94-810e-cb1cd8f8719d" name="Default Changelist" comment="">
+    <list default="true" id="dd7c5c39-1885-4c94-810e-cb1cd8f8719d" name="Default Changelist" comment="re">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service.yaml" afterDir="false" />
     </list>
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+            <state relative-caret-position="520">
+              <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -27,6 +27,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>required</find>
+      <find>: application/</find>
+      <find>consumes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1560276483033</updated>
       <workItem from="1560276484581" duration="488000" />
-      <workItem from="1560279547270" duration="7416000" />
+      <workItem from="1560279547270" duration="9179000" />
     </task>
     <task id="LOCAL-00001" summary="structure setup for all 3 items">
       <created>1560280004020</created>
@@ -122,11 +124,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560292868374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="put get complete for pet">
+      <created>1560295713899</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560295713899</updated>
+    </task>
+    <task id="LOCAL-00006" summary="all api calls completed for pet.">
+      <created>1560297838598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560297838598</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7904000" />
+    <option name="totallyTimeSpent" value="9667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1164" height="768" extended-state="0" />
@@ -161,13 +177,15 @@
     <MESSAGE value="All schemas defined." />
     <MESSAGE value="starting on service for pets. template setup" />
     <MESSAGE value="api for post pet done." />
-    <option name="LAST_COMMIT_MESSAGE" value="api for post pet done." />
+    <MESSAGE value="put get complete for pet" />
+    <MESSAGE value="all api calls completed for pet." />
+    <option name="LAST_COMMIT_MESSAGE" value="all api calls completed for pet." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/service.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+        <state relative-caret-position="520">
+          <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
         </state>
       </provider>
     </entry>
